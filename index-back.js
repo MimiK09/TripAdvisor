@@ -45,6 +45,6 @@ app.get("/", (req, res) => {
 	res.send("server is up");
 });
 
-app.listen(PORT, () => {
+app.listen(3000, () => {
 	console.log("server is listening 🚀 ");
 });
