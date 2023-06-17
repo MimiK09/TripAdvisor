@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/cc263bd61b.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/font.css" />
+		<link rel="stylesheet" href="./assets/css/icons.css" />
+		<script src="./assets/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="modale">
+			<form class="form">
+				<p class="close-modale"><i class="fa-solid fa-xmark close-modale"></i></p>
+				<h2>Formulaire de contact</h2>
+
+				<label
+					><input type="text" name="prenom" id="form-prenom" value="prenom"
+				/></label>
+				<label
+					><input type="text" name="nom" id="form-nom" value="nom"
+				/></label>
+				<label
+					><input type="mail" name="mail" id="form-mail" value="mail"
+				/></label>
+				<label
+					><input type="text" name="subject" id="form-subject" value="subject"
+				/></label>
+				<label
+					><input
+						rows="5"
+						cols="33"
+						type="textarea"
+						name="message"
+						id="form-message"
+						value="message"
+				/></label>
+				<button type="submit">Envoyer le message</button>
+			</form>
+		</div>
+		<header class="container">
+			<div class="burger"><i class="icon-menu_bars"></i></div>
+			<div>
+				<img src="./assets/img/logotripadvisor.svg" alt="logo tripadvisor" />
+			</div>
+			<nav>
+				<a href="#"
+					><i class="icon-pencil"></i>
+					<p>Avis</p></a
+				>
+
+				<a href="#"
+					><i class="icon-alert"></i>
+					<p>Alertes</p></a
+				>
+
+				<a href="#"
+					><i class="icon-favorite_pin"></i>
+					<p>Favoris</p></a
+				>
+
+				<button class="myBtn-modale">Connectez-vous</button>
+
+				<a href="#" class="tablette"
+					><i class="icon-empty_cart"></i>
+					<p>Panier</p></a
+				>
+			</nav>
+			<div class="burger"><i class="icon-empty_cart"></i></div>
+		</header>
+		<main class="container">
+			<h1><span>Explorez</span> Séoul</h1>
+			<nav class="fixed">
+				<div class="vignette">
+					<p>Hôtel</p>
+					<i class="icon-hotels"></i>
+				</div>
+				<div class="vignette">
+					<p>Activités</p>
+					<i class="icon-activities"></i>
+				</div>
+				<div class="vignette">
+					<p>Locations de vacances</p>
+					<i class="icon-vacation_rentals"></i>
+				</div>
+				<div class="vignette">
+					<p>Restaurants</p>
+					<i class="icon-restaurants"></i>
+				</div>
+				<div class="vignette">
+					<p>Forums de voyage</p>
+					<i class="icon-forums"></i>
+				</div>
+				<div class="vignette displaybg-none">
+					<p>Vols</p>
+					<i class="icon-flights"></i>
+				</div>
+				<div class="vignette displaybg-none">
+					<p>Croisières</p>
+					<i class="icon-cruises"></i>
+				</div>
+				<div class="vignette">
+					<p>Plus</p>
+					<i class="icon-plus"></i>
+				</div>
+			</nav>
+
+			<div class="bloc-pictures">
+				<div class="bigone containerimage">
+					<img src="./assets/img/photoSeoul1.jpg" alt="photo de Seoul1" />
+					<div class="toutes-photos">
+						<i class="icon-photo"></i>
+						<p>Toutes les photos</p>
+					</div>
+				</div>
+				<div class="littleone">
+					<div class="containerimage">
+						<img src="./assets/img/photobonusSeoul.jpg" alt="photo de Seoul1" />
+					</div>
+					<div class="containerimage">
+						<img src="./assets/img/photoSeoul3.jpg" alt="photo de Seoul1" />
+					</div>
+				</div>
+			</div>
+
+			<nav class="fil-ariane">
+				<p>fil d'ariane à venir</p>
+				<p>Visiter : Seoul</p>
+			</nav>
+
+			<section class="presentation">
+				<div class="bigone">
+					<h2>
+						Le centre financier et culturel de la Corée du Sud, où les
+						gratte-ciels dominent les palais et les pagodes
+					</h2>
+					<p>
+						Ville où l'on passe sans transition des gratte-ciels et néons
+						modernes aux temples bouddhistes, palais et pagodes, Séoul présente
+						un fascinant mélange d'ancien et de moderne. Rendez-vous tout en
+						haut de la N Seoul Tower, bâtie sur un sommet du parc Namsan, pour
+						admirer le panorama urbain. Les maisons de thé et les boutiques
+						d'Insadong vous donnent un avant-goût de la Corée. Poursuivez par
+						une visite de l'enceinte et des musées du palais de Gyeongbokgung.
+						Inscrit au patrimoine mondial de l'UNESCO, c'est un superbe exemple
+						de l'ancienne architecture traditionnelle.
+					</p>
+				</div>
+				<div class="voyage">
+					<div class="voyage-intro">
+						<h3>Seoul : commencez à organiser</h3>
+						<p>
+							Creez un voyage pour enregistrer et organiser toutes vos idées et
+							les visualiser sur une carte.
+						</p>
+						<button>Creez un voyage</button>
+					</div>
+					<div class="voyage-pict">
+						<img src="./assets/img/maps.png" alt="ceci est une carte" />
+					</div>
+				</div>
+			</section>
+			<section class="immanquable-list">
+				<h2>Séoul : les immanquables</h2>
+				<div class="carrousel-line-immanquable">
+					<div class="text-immanquable">
+						<h3>Se divertir</h3>
+						<p>
+							Des lieux à voir, des rues à explorer et des expériences
+							emblématiques à Séoul.
+						</p>
+						<a><button>Tout afficher</button></a>
+					</div>
+					<div class="slider-immanquable">
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/activity1.jpg" /><i
+									class="icon-heart"
+								></i>
+							</div>
+							<h4>Myeongdong</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i>10325 avis
+								</span>
+							</div>
+							<p>Quartiers, Monuments & Points d'intérêt</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/activity2.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>N Seoul Tower</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_empty"></i>8325 avis
+								</span>
+							</div>
+							<p>Quartiers, Monuments & Points d'intérêt</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/activity3.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Bukchon</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_empty"></i>6539 avis
+								</span>
+							</div>
+							<p>Quartiers, Monuments & Points d'intérêt</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/activity1.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Myeongdong</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i>10325 avis
+								</span>
+							</div>
+							<p>Quartiers, Monuments & Points d'intérêt</p>
+						</div>
+					</div>
+				</div>
+				<div class="carrousel-line-immanquable">
+					<div class="text-immanquable">
+						<h3>Se reposer</h3>
+						<p>Un mélange de charme, de symboles et de modernité.</p>
+						<a><button>Tout afficher</button></a>
+					</div>
+					<div class="slider-immanquable">
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/logement1.jpg" /><i
+									class="icon-heart"
+								></i>
+							</div>
+							<h4>Hotel</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i>10325 avis
+								</span>
+							</div>
+							<p>Hôtel de luxe</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/logement2.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Hanok</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_empty"></i>8325 avis
+								</span>
+							</div>
+							<p>Logement traditionnel</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/logement1.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Hotel</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_empty"></i>6539 avis
+								</span>
+							</div>
+							<p>Hôtel de luxe</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/logement2.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Hanok</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i>10325 avis
+								</span>
+							</div>
+							<p>Logement traditionnel</p>
+						</div>
+					</div>
+				</div>
+				<div class="carrousel-line-immanquable">
+					<div class="text-immanquable">
+						<h3>Se restaurer</h3>
+						<p>Des restaurants et bars typiques, et plus encore à Séoul.</p>
+						<a><button>Tout afficher</button></a>
+					</div>
+					<div class="slider-immanquable">
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/food1.jpg" /><i class="icon-heart"></i>
+							</div>
+							<h4>Samgyeopsal</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i>10325 avis
+								</span>
+							</div>
+							<p>Plat à partager, grillades</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/food2.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Kimbap</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_empty"></i>8325 avis
+								</span>
+							</div>
+							<p>Plat traditionnel, snack</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/food3.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Tteokpokki</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_empty"></i>6539 avis
+								</span>
+							</div>
+							<p>Plat traditionnel, snack</p>
+						</div>
+						<div class="tuile-immanquable">
+							<div class="pict">
+								<img src="./assets/img/food1.jpg" />
+								<div class="like"><i class="icon-heart"></i></div>
+							</div>
+							<h4>Myeongdong</h4>
+							<div class="note">
+								<span
+									> <i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i
+									><i class="icon-bubble_rating_full"></i>10325 avis
+								</span>
+							</div>
+							<p>Plat à partager, grillades</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div><img src="./assets/img/icon-TA.png" /></div>
+			<p>Made at Le Reacteur by Emeline - 2023</p>
+		</footer>
+	</body>
+</html>

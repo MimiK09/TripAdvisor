@@ -1,0 +1,653 @@
+/*---GENERAL---*/
+body {
+	font-family: TS-Reg, sans-serif;
+}
+.container {
+	border: 1px solid red;
+	width: 1138px;
+	margin: 0 auto;
+}
+h1 {
+	font-family: TS-Med, sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	margin: 10px 0;
+	line-height: 120%;
+}
+h2 {
+	font-family: TS-Med, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0;
+	line-height: 120%;
+}
+h3 {
+	font-family: TS-Med, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 120%;
+}
+
+h4 {
+	font-family: TS-Med, sans-serif;
+	font-size: 18px;
+	margin: 10px 0;
+	font-weight: bolder;
+	line-height: 120%;
+}
+
+section {
+	margin: 36px 0;
+}
+
+
+/*------*/
+/*---Modale---*/
+/*------*/
+
+.modale{
+	display: none;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #888;
+}
+
+.display-flex {
+	display:flex;
+	justify-content: flex-start;
+}
+
+.modale form {
+	background-color: #fefefe;
+	display: flex;
+	flex-direction: column;
+justify-content: center;
+align-items: center;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  margin: 80px auto;
+  position: relative;
+}
+
+.modale input {
+border-radius: 5px;
+margin: 5px 0;
+}
+
+.modale button {
+	font-family: TS-Reg, sans-serif;
+	max-width: 50%;
+	margin: 15px 0;
+	display: flex;
+	background-color: black;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	padding: 10px 20px;
+}
+
+.modale input[type="textarea"] {
+height: 6rem; 
+ }
+
+.modale .form p {font-family: TS-Reg, sans-serif;
+	max-width: 50%;
+	margin: 15px 0;
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	left:340px;
+	top:-40px;
+}
+.modale .form p i {
+	color : white;
+}
+
+/*------*/
+/*---HEADER---*/
+/*------*/
+
+header :is(a, button) {
+	padding: 10px 15px;
+	border-radius: 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+}
+header a:hover {
+	background-color: #e2dede;
+}
+
+header a > * {
+	padding: 0 5px;
+}
+
+header > div > img {
+	max-height: 50px;
+}
+
+header {
+	/* background-color: darkseagreen; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	/* background-color: blue; */
+	display: flex;
+	width: 60%;
+	align-items: center;
+	justify-content: space-between;
+}
+header button {
+	display: flex;
+	background-color: black;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	padding: 10px 20px;
+	font-family: TS-Reg, sans-serif;
+}
+header button:hover {
+	background-color: #333333;
+}
+
+.burger {
+	display: none;
+}
+
+/*------*/
+/*---MAIN---*/
+/*------*/
+
+/*---H1 et NAV1---*/
+
+main h1 span {
+	color: #ff5d5d;
+}
+.fixed {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-top: 36px;
+}
+
+.fil-ariane {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 36px;
+}
+
+.vignette {
+	flex: 1;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	padding: 5px;
+	width: calc((100%-50px) / 6);
+	height: 66px;
+	display: flex;
+	justify-content: space-around;
+}
+nav > *:not(:last-child) {
+	margin-right: 10px;
+}
+.vignette:hover {
+	color: white;
+	background-color: #000000;
+}
+
+.vignette > * {
+	margin-top: 10px;
+}
+.vignette > p {
+	width: 60%;
+}
+
+/*---PHOTOS---*/
+.bloc-pictures {
+	display: flex;
+	height: 400px;
+	gap: 5px;
+	margin-top: 36px;
+}
+.bloc-pictures .bigone {
+	flex: 3;
+	overflow: hidden;
+}
+.bloc-pictures .littleone {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 40%;
+	gap: 1%;
+}
+.bloc-pictures .littleone > * {
+	height: 50%;
+}
+.containerimage {
+	overflow: hidden;
+	position: relative;
+}
+.containerimage img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.toutes-photos {
+	background-color: black;
+	color: white;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 100px;
+	padding: 5px 20px;
+	display: flex;
+	height: 35px;
+	width: 130px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+.toutes-photos:hover {
+	background-color: #333333;
+}
+.toutes-photos p {
+	font-size: small;
+}
+
+/*---ARIANE---*/
+.fil-ariane {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*---PRESENTATION---*/
+.presentation {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 36px;
+	gap: 5px;
+}
+.voyage {
+	display: flex;
+	flex-direction: column;
+	background-color: #ff5d5d;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 30%;
+}
+.presentation .bigone {
+	width: 60%;
+}
+.voyage-intro {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.voyage img {
+	max-width: 100%;
+	margin-top: 20px;
+}
+.presentation p {
+	line-height: 150%;
+}
+.voyage button {
+	font-family: TS-Reg, sans-serif;
+	max-width: 50%;
+	margin-top: 15px;
+	display: flex;
+	background-color: black;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	padding: 10px 20px;
+}
+.voyage button:hover {
+	background-color: #333333;
+}
+
+.voyage h3 {
+	margin: 10px 0;
+}
+
+/*---IMMANQUABLES---*/
+
+.immanquable-list > * {
+	margin: 36px 0;
+}
+
+.text-immanquable p {
+	font-family: Georgia, "Times New Roman", Times, serif, serif;
+	margin: 10px 0;
+	line-height: 120%;
+}
+
+.carrousel-line-immanquable {
+	display: flex;
+	justify-content: space-between;
+	height: 320px;
+	gap: 20px;
+	margin-top: 50px;
+	/* background-color: aqua; */
+}
+
+.carrousel-line-immanquable button {
+	text-decoration: underline;
+	margin: 10px 0;
+}
+
+.carrousel-line-immanquable button:hover {
+	color: #333333;
+}
+
+.text-immanquable {
+	display: flex;
+	flex-direction: column;
+	/* background-color: yellow; */
+	flex: 2.5;
+}
+.slider-immanquable {
+	display: flex;
+	/* background-color: blue; */
+	gap: 10px;
+	flex: 7.5;
+	overflow: hidden;
+	overflow-x: scroll;
+	/* Hide scrollbar for IE, Edge and Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.tuile-immanquable {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: calc(100% / 3);
+	flex-shrink: 0;
+}
+.tuile-immanquable .pict {
+	overflow: hidden;
+	position: relative;
+}
+
+.tuile-immanquable .pict img {
+	min-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tuile-immanquable i {
+	margin-right: 1px;
+}
+.tuile-immanquable i:last-child {
+	margin-right: 5px;
+}
+.tuile-immanquable p {
+	margin: 10px 0;
+	font-size: 12px;
+}
+
+.pict i {
+	border-radius: 50%;
+	position: absolute;
+	background-color: #ffffff;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+}
+
+.pict i:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+/*------*/
+/*---FOOTER---*/
+/*------*/
+
+footer {
+	background-color: #f9f1ec;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 200px;
+}
+
+footer > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+footer > div > img {
+	width: 80%;
+	height: auto;
+}
+
+.displaybg-none {
+	display: none;
+}
+
+/*------*/
+/*--MEDIA QUERIES---*/
+/*------*/
+@media (min-width: 1024px) and (max-width: 1184px) {
+	.container {
+		border: 1px solid green;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	/* header nav p {
+	display:none;
+ } */
+
+	header nav {
+		/* background-color: blue; */
+		justify-content: flex-end;
+	}
+
+	.burger {
+		display: none;
+	}
+
+	.displaybg-none {
+		display: inline-flex;
+	}
+
+	.fixed {
+		flex-wrap: wrap;
+	}
+	.fixed div:nth-child(4) {
+		margin-right: 0px;
+	}
+
+	.vignette {
+		flex-basis: calc((100% - 30px) / 5);
+		margin-bottom: 10px;
+		height: 42px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.container {
+		border: 1px solid yellow;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	header nav p {
+		display: none;
+	}
+
+	header nav {
+		/* background-color: blue; */
+		justify-content: flex-end;
+	}
+
+	.burger {
+		display: none;
+	}
+
+	.displaybg-none {
+		display: inline-flex;
+	}
+
+	.fixed {
+		flex-wrap: wrap;
+	}
+	.fixed div:nth-child(4) {
+		margin-right: 0px;
+	}
+
+	.vignette {
+		flex-basis: calc((100% - 30px) / 5);
+		margin-bottom: 10px;
+		height: 42px; /* Ajout d'une marge inférieure pour l'espace entre les lignes */
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		border: 1px solid pink;
+		width: 95%;
+		margin: 0 auto;
+	}
+	header {
+		/* background-color: darkseagreen; */
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	.burger {
+		display: flex;
+	}
+
+	.burger i {
+		font-size: 20px;
+	}
+	.fixed {
+		overflow-x: scroll;
+		/* Hide scrollbar for IE, Edge and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+	.vignette {
+		border-radius: 5px;
+		border: 1px solid #000000;
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: auto;
+		height: auto;
+		padding: 5px;
+		display: flex;
+	}
+	.vignette > * {
+		margin: 10px;
+	}
+	.bloc-pictures .littleone {
+		display: none;
+	}
+
+	.presentation {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 36px;
+		gap: 5px;
+	}
+
+	.presentation > * {
+		width: 100%;
+	}
+
+	.presentation .bigone {
+		width: 90%;
+		margin: 20px;
+	}
+
+	.voyage button {
+		font-family: TS-Reg, sans-serif;
+		max-width: 50%;
+		margin: 15px 0;
+		display: flex;
+		background-color: black;
+		color: white;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100px;
+		padding: 10px 20px;
+	}
+	.voyage .voyage-pict {
+		display: none;
+	}
+
+	.carrousel-line-immanquable {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+		margin-top: 10px;
+		height: 700px;
+		/* background-color: aqua; */
+	}
+
+	.text-immanquable {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* background-color: yellow; */
+		flex: 1;
+	}
+
+	.slider-immanquable {
+		display: flex;
+		/* background-color: blue; */
+		gap: 10px;
+		overflow-x: scroll;
+		/* Hide scrollbar for IE, Edge and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.tuile-immanquable {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		min-width: 60%;
+		flex-shrink: 0;
+		flex-grow: 1;
+	}
+
+
+}
