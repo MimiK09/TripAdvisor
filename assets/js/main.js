@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		console.log("test",{ firstname, lastname, email, subject, message });
 
-		const response = await axios.post("http://localhost:3000/form", {
+		const response = await axios.post(`${process.env.northlank}:${process.env.PORT}/form`, {
 			firstname,
 			lastname,
 			email,
