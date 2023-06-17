@@ -1,5 +1,5 @@
 // Gestion de la modale
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
 document.addEventListener("DOMContentLoaded", () => {
