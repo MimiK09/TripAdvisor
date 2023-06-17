@@ -1,5 +1,5 @@
 // Gestion de la modale
-dotenv.config();
+require("dotenv").config();
 
 document.addEventListener("DOMContentLoaded", () => {
 	//ouverture modale
