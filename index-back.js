@@ -3,6 +3,7 @@ const cors = require("cors");
 const formData = require("form-data");
 const Mailgun = require("mailgun.js");
 require("dotenv").config();
+PORT=process.env.PORT
 
 const mailgun = new Mailgun(formData);
 const client = mailgun.client({
@@ -45,6 +46,6 @@ app.get("/", (req, res) => {
 	res.send("server is up");
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
 	console.log("server is listening 🚀 ");
 });
