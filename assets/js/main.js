@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		console.log("test",{ firstname, lastname, email, subject, message });
 
-		const response = await axios.post("https://site--tripadvisor--d4x522rwzwfd.code.run/", {
+		const response = await axios.post("https://site--tripadvisor--d4x522rwzwfd.code.run/form", {
 			firstname,
 			lastname,
 			email,
